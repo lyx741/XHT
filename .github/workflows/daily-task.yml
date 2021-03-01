@@ -85,7 +85,7 @@ jobs:
         appid: ${{secrets.appid}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
       
-          - name: LYX
+    - name: LYX
       if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.HM2}}
@@ -93,7 +93,7 @@ jobs:
         appid: ${{secrets.appid}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
       
-          - name: CZC
+     - name: CZC
       if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.HM3}}
@@ -101,7 +101,7 @@ jobs:
         appid: ${{secrets.appid}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
       
-          - name: CZR2
+     - name: CZR2
       if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.HM4}}
@@ -109,6 +109,7 @@ jobs:
         appid: ${{secrets.appid}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
       
+     - name: CG
       if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.HM5}}
