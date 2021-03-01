@@ -109,7 +109,7 @@ jobs:
         appid: ${{secrets.appid}}
       run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
       
-     - name: CG
+     - name: CGq
       if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.HM5}}
